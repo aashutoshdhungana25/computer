@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Light Cyan */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            overflow: auto; 
+            max-height: 80vh;
+            background-color: #ffffff; /* White */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1 {
+            font-size: 50px;
+            color: #004d40; /* Dark Teal */
+            text-align: center;
+        }
+        p {
+            color: #333; /* Dark Gray */
+            line-height: 1.6;
+        }
+        .underline {
+            text-decoration: underline;
+            font-size: 20px;
+            font-weight: bold;
+            color: #00695c; /* Teal */
+        }
+        marquee {
+            background-color: #b2ebf2; /* Lighter Cyan */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #f1f8e9; /* Light Green */
+            padding: 10px;
+            border-left: 4px solid #388e3c; /* Dark Green */
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <marquee id="scrollingText" behavior="scroll" direction="left" scrollamount="20" onmouseover="javascript:stop()" onmouseout="javascript:start()"><h1>Structured Query Language (SQL)</h1></marquee>
+        
+        <p class="underline">1&#9672 What is SQL?</p>
+        <p>SQL, or Structured Query Language, is a standardized programming language used for managing data in relational database management systems (RDBMS). 
+            It enables users to query, insert, update, and delete data within tables, defining and manipulating database structures such as tables and indexes. 
+            SQL commands like SELECT, INSERT, UPDATE, and DELETE retrieve, add, modify, and remove data respectively, while constraints like PRIMARY KEY and FOREIGN KEY enforce data integrity rules. 
+            SQL also supports joins to combine data from multiple tables based on related columns. Widely implemented in databases such as MySQL, PostgreSQL, and SQLite, SQL is essential for developers 
+            and data professionals alike, facilitating efficient data manipulation and database management tasks.</p>
+
+        <p class="underline">2&#9672 Tasks Carried Out on 6th Day/Practical Class</p>
+        <p>Based on the SQL commands provided, here are the step-by-step actions that were attempted, inferred from the commands assigned on computer lab:<br><br>
+            &#11166<span style="font-size: 15px; font-weight: bold;">Creation and Table Creation:</span><br>
+            - Created a database named <code>SECTION_G</code>.<br>
+            - Created a table named <code>STUDENT_INFO</code> within <code>SECTION_G</code> with columns <code>ID</code> (auto-increment primary key), <code>NAME</code>, <code>CLASS</code>, <code>SECTION</code>, and <code>STREAM</code>.<br>
+            &#11166<span style="font-size: 15px; font-weight: bold;">Data Manipulation and Selection:</span><br>
+            - Attempted to select all data from <code>student_info</code> and <code>booktable1</code> (assuming to check existing data or verify commands).<br>
+            &#11166<span style="font-size: 15px; font-weight: bold;">Additional Database and Table Creation:</span><br>
+            - Attempted to create another database named <code>SECTIONG</code>.<br>
+            - Created a table named <code>BOOKTABLE1</code> within <code>SECTIONG</code> with columns <code>ID</code>, <code>NAME</code>, <code>PRICE</code>, and <code>PUBLICATION</code>.<br>
+            &#11166<span style="font-size: 15px; font-weight: bold;">Alterations to Table Structure:</span><br>
+            - Added a new column <code>AUTHOR</code> to the <code>BOOKTABLE1</code> table.<br>
+            - Dropped the <code>AUTHOR</code> column from the <code>BOOKTABLE1</code> table.<br>
+            &#11166<span style="font-size: 15px; font-weight: bold;">Data Insertion and Selection:</span><br>
+            - Inserted a row into <code>BOOKTABLE1</code> with values for <code>ID</code>, <code>NAME</code>, <code>PRICE</code>, and <code>PUBLICATION</code>.<br>
+            - Inserted multiple rows into <code>BOOKTABLE1</code> with varying values for <code>ID</code>, <code>NAME</code>, <code>PRICE</code>, and <code>PUBLICATION</code>.<br>
+            - Selected data from <code>BOOKTABLE1</code> after each insertion to verify changes.<br>
+            &#11166<span style="font-size: 15px; font-weight: bold;">Data Filtering and Projection:</span><br>
+            - Selected specific columns (<code>ID</code> and <code>NAME</code>) from <code>BOOKTABLE1</code>.<br>
+            - Selected all data from <code>STUDENT_INFO</code>.<br>
+            - Filtered <code>BOOKTABLE1</code> rows where <code>ID</code> equals 1, or where <code>NAME</code> equals "COMPUTER".<br>
+            - Filtered <code>BOOKTABLE1</code> rows where <code>ID</code> equals 1 or 4 simultaneously, and then where both <code>ID</code> equal 1 and 4.<br>
+            &#11166<span style="font-size: 15px; font-weight: bold;">Data Updates:</span><br>
+            - Updated <code>ID</code> to 201 where <code>ID</code> equals 1 in <code>BOOKTABLE1</code>.<br>
+            - Updated <code>NAME</code> to "ADVANCED PHYSICS" where <code>NAME</code> equals "PHYSICS" in <code>BOOKTABLE1</code>.<br>
+            &#11166<span style="font-size: 15px; font-weight: bold;">Data Range Queries:</span><br>
+            - Selected rows from <code>BOOKTABLE1</code> where <code>PRICE</code> is between 2000 and 4000, and then between 400 and 500.<br>
+            &#11166<span style="font-size: 15px; font-weight: bold;">Data Deletion:</span><br>
+            - Deleted the row from <code>BOOKTABLE1</code> where <code>ID</code> equals 5.<br>
+            &#11166<span style="font-size: 15px; font-weight: bold;">Table and Database Deletion:</span><br>
+            - Dropped the <code>BOOKTABLE1</code> table.<br>
+            - Dropped the <code>SECTION_G</code> database.<br>
+        </p>
+
+        <p class="underline">3&#9672 Used SQL Keywords in The Process</p>
+        <p>
+            The used SQL Keywords to carry out the task provided in computer practical class are listed below chronologically.<br>
+            <pre>CREATE DATABASE SECTION_G</pre>
+            <pre>CREATE TABLE STUDENT_INFO (ID INT(3) PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255), CLASS INT(3), SECTION VARCHAR(255), STREAM VARCHAR(255))</pre>
+            <pre>SELECT * FROM student_info</pre>
+            <pre>CREATE DATABASE SECTIONG</pre>
+            <pre>CREATE TABLE BOOKTABLE1 (ID INT(3), NAME VARCHAR(255), PRICE INT(5), PUBLICATION VARCHAR(255))</pre>
+            <pre>ALTER TABLE booktable1 ADD COLUMN AUTHOR VARCHAR(255)</pre>
+            <pre>INSERT INTO booktable1 (ID, NAME, PRICE, PUBLICATION) VALUES(1, "COMPUTER", 450, "HERITAGE PUBLICATION")</pre>
+            <pre>UPDATE booktable1 SET ID= 201 WHERE ID=1</pre>
+            <pre>DELETE FROM booktable1 WHERE ID=5</pre>
+            <pre>DROP TABLE booktable1</pre>
+            <pre>DROP DATABASE section_g</pre>
+        </p>
+        <p>Source: Viewed from console on XAMPP.</p>
+    </div>
+</body>
+</html>
