@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Definition Language (DDL)</title>
+    <style>
+        body {
+            background-color: #E8F0FE; /* Light Blue */
+            color: #333; /* Dark Gray */
+            font-family: "Arial", sans-serif;
+            text-align: justify;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #00509E; /* Dark Blue */
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        hr {
+            background-color: #FF5733; /* Bright Orange */
+            height: 2px;
+            border: none;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #004B87; /* Slightly Darker Blue */
+            font-size: 28px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        ol {
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Definition Language (DDL)</h1>
+    <hr>
+    <p>Data Definition Language (DDL) is an integral part of SQL (Structured Query Language), specifically designed for defining and managing the schema of a database. Unlike Data Manipulation Language (DML), which focuses on data operations such as insertion, updating, and deletion, DDL is concerned with the structure and organization of the database objects themselves. DDL commands are vital for creating, modifying, and removing database structures, ensuring the database is organized and ready for data manipulation.</p>
+    
+    <h2>Common DDL Commands:</h2>
+    <ol>
+        <li><b>CREATE</b>
+            <p>The CREATE command is used to create various database objects, including tables, indexes, views, and databases. It defines the structure of these objects and their attributes.</p>
+        </li>
+        <li><b>ALTER</b>
+            <p>The ALTER command modifies existing database objects. It can add, modify, or drop columns, as well as change other attributes of the object.</p>
+        </li>
+        <li><b>DROP</b>
+            <p>The DROP command deletes database objects permanently, removing both the structure and the data contained within the object.</p>
+        </li>
+        <li><b>TRUNCATE</b>
+            <p>The TRUNCATE command removes all records from a table but retains the table structure for future use. It is faster than the DELETE command as it does not generate individual row delete actions.</p>
+        </li>
+        <li><b>RENAME</b>
+            <p>The RENAME command changes the name of a database object, such as a table or column.</p>
+        </li>
+        <li><b>COMMENT</b>
+            <p>The COMMENT command is used to add descriptive comments to the data dictionary, enhancing the documentation of the database schema.</p>
+        </li>
+    </ol>
+</body>
+</html>
